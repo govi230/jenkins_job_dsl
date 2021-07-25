@@ -3,7 +3,7 @@ job("abText"){
   scm {
     github(
     ownerAndProject = 'govi230/okd_training',
-    branch='master',
-    protpcol='https')
+    branch = 'master',
+    protpcol = 'https',)
   }
 }
