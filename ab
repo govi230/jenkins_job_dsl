@@ -10,5 +10,8 @@ job("abText"){
     shell{
       command("echo Hello")
     }
+    shell{
+      command("data")
+    }
   }
 }
