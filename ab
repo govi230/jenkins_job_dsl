@@ -8,8 +8,7 @@ job("abText"){
   }
   steps{
     shell{
-      command("echo Hello")
-      command("date")
+      command("echo Hello \n date")
     }
   }
 }
