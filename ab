@@ -7,6 +7,6 @@ job("abText"){
     protpcol = 'https',)
   }
   steps{
-    shell(command("echo Hello World"))
+    shell(command("echo Hello"))
   }
 }
