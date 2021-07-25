@@ -9,9 +9,7 @@ job("abText"){
   steps{
     shell{
       command("echo Hello")
-    }
-    shell{
-      command("data")
+      command("date")
     }
   }
 }
