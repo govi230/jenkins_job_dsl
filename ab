@@ -1,9 +1,6 @@
 job("abText"){
   description("This is created By SEED Job")
   scm {
-    github(
-      ownerAndProject: 'govi230/okd_training',
-      branch: 'master',
-      protocol: 'https')
+    github('govi230/okd_training','master','https')
   }
 }
