@@ -6,4 +6,7 @@ job("abText"){
     branch = 'master',
     protpcol = 'https',)
   }
+  steps{
+    shell(command("echo Hello World"))
+  }
 }
