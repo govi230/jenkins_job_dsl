@@ -17,7 +17,7 @@ job("WebDeploy"){
     }
     steps{
         shell{
-            command("cp -r webpages/* /var/www/html")
+            command("sudo cp -r webpages/* /var/www/html")
         }
     }
 
