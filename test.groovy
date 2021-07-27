@@ -9,7 +9,7 @@ job("WebDeploy"){
     }
     steps{
         shell{
-            command("cp -r okd_training/* /var/www/html/")
+            command("ls")
         }
     }
 
