@@ -10,7 +10,7 @@ job("WebDeploy"){
 				host = "github.com"
 			)
 		}
-		extension{
+		extensions{
 			relativeTargetDirectory("webpages")
 		}
         }
