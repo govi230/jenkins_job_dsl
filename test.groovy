@@ -1,4 +1,5 @@
 job("WebDeploy"){
+    authenticationToken("redhat")
     description("Webpage Deploy")
     scm{
         git{
