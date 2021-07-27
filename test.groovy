@@ -1,15 +1,23 @@
 job("WebDeploy"){
     description("Webpage Deploy")
     scm{
-        github(
-            ownerAndProject = "govi230/okd_training",
-            branch = "master",
-            protocol = "https"
-        )
+        git{
+		remote{
+			branch("master")
+			github(
+				ownerAndProject = "govi230/okd_training",
+				protocol = "https",
+				host = "github.com"
+			)
+		}
+		extension{
+			relativeTargetDirectory("webpages")
+		}
+        }
     }
     steps{
         shell{
-            command("ls")
+            command("cp -r webpages/* /var/www/html")
         }
     }
 
