@@ -1,6 +1,7 @@
 job("WebDeploy"){
     authenticationToken("redhat")
     description("Webpage Deploy")
+    label("sshAgent")
     scm{
         git{
             remote{
@@ -14,6 +15,11 @@ job("WebDeploy"){
             extensions{
                 relativeTargetDirectory("webpages")
             }
+        }
+    }
+    triggers{
+        urlTrigger{
+
         }
     }
     steps{
