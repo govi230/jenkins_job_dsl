@@ -17,11 +17,6 @@ job("WebDeploy"){
             }
         }
     }
-    triggers{
-        urlTrigger{
-
-        }
-    }
     steps{
         shell{
             command("sudo cp -r webpages/* /var/www/html")
