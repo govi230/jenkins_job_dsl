@@ -2,17 +2,20 @@ job("WebDeploy"){
     // 'github_repo' variable contains username and reponame
     // Like   '--username--/--reponame--'
     github_repo = "govi230/okd_training"
-    
     // Token Value (With the help of this Token Job Can be run remotely with URL)
     job_token = "redhat"
-    
     // 'job_description' contains description about JOB
     job_description = "Web Deployment"
+    // 'display_name' contain Name which will we display on Jenkins Jos Dashboard
+    display_name = "Okd Web Deployment"
+
 
     // Provide Authentication Token
     authenticationToken(job_token)
     // Job Description 
     description(job_description)
+    // Display Name
+    displayName(display_name)
     // Agent Label where this job will be run
     label("sshAgent")
     scm{
