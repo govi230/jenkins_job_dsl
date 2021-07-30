@@ -1,4 +1,5 @@
 job("WebDeploy"){
+    github_repo = "govi230/okd_training"
     authenticationToken("redhat")
     description("Webpage Deploy")
     label("sshAgent")
@@ -7,7 +8,7 @@ job("WebDeploy"){
             remote{
                 branch("master")
                 github(
-                    ownerAndProject = "govi230/okd_training",
+                    ownerAndProject = github_repo,
                     protocol = "https",
                     host = "github.com"
                 )
