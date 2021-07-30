@@ -1,7 +1,7 @@
 class config{
 // 'github_repo' variable contains username and reponame
 // Like   '--username--/--reponame--'
-github_repo = "govi230/okd_training"
+String github_repo = "govi230/okd_training"
 
 // Token Value (With the help of this Token Job Can be run remotely with URL)
 job_token = "redhat"
