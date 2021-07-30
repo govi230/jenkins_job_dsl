@@ -1,8 +1,8 @@
-import  config.job_token
+import  config
 
 job("WebDeploy"){
     // Provide Authentication Token
-    authenticationToken(job_token)
+    authenticationToken(config.job_token)
     // Job Description 
     description(job_description)
     // Agent Label where this job will be run
