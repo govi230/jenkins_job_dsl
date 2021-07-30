@@ -1,7 +1,11 @@
+import  config.*
+
 job("WebDeploy"){
-    github_repo = "govi230/okd_training"
-    authenticationToken("redhat")
-    description("Webpage Deploy")
+    // Provide Authentication Token
+    authenticationToken(job_token)
+    // Job Description 
+    description(job_description)
+    // Agent Label where this job will be run
     label("sshAgent")
     scm{
         git{
