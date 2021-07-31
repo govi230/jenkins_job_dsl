@@ -45,5 +45,10 @@ job("Maven JOb"){
             rootPOM(scm_target_dir)
         }
     }
-
+    publishers{
+        archiveArtifacts{
+            pattern(scm_target_dir+"/target/*.jar")
+            onlyIfSuccessful()
+        }
+    }
 }
