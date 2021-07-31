@@ -50,5 +50,8 @@ job("Maven JOb"){
             pattern(scm_target_dir+"/target/*.jar")
             onlyIfSuccessful()
         }
+        jUnitResultArchiver{
+            testResults(scm_target_dir+"/target/surefire-reports/*.xml")
+        }
     }
 }
