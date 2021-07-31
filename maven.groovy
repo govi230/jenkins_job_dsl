@@ -42,6 +42,7 @@ job("Maven JOb"){
         maven{
             mavenInstallation(maven_nstallation)
             goals("package")
+            rootPOM(scm_target_dir)
         }
     }
 
